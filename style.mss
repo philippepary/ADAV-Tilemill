@@ -216,6 +216,7 @@ Map {
   	['bicycle'='designated'] {
        ::inline {
     		line-color: #caa000;
+        /*en dasharray les surfaces définis et sinon en continue */ 
         	[surface='cobblestone'],[surface='paved'],[surface='dirt'],[surface='earth'],[surface='sand'],[surface='pebbleston'],[surface='sett'] { 
               	[zoom>=12] { line-dasharray: @z12 - 2, @z12*1.5; }
     			[zoom=13] { line-dasharray: @z13 - 2, @z13*1.5; }

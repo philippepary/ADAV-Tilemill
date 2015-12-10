@@ -217,38 +217,38 @@ Map {
        ::inline {
     		line-color: #caa000;
         /*en dasharray les surfaces définis et sinon en continue */ 
-        	[surface='cobblestone'],[surface='paved'],[surface='dirt'],[surface='earth'],[surface='sand'],[surface='pebbleston'],[surface='sett'] { 
-              	[zoom>=12] { line-dasharray: @z12 - 2, @z12*1.5; }
-    			[zoom=13] { line-dasharray: @z13 - 2, @z13*1.5; }
-    			[zoom=14] { line-dasharray: @z14 - 2, @z14*1.5; }
-    			[zoom=15] { line-dasharray: @z15 - 2, @z15*1.5; }
-    			[zoom=16] { line-dasharray: @z16 - 2, @z16*1.5; }
-    			[zoom>=17] { line-dasharray: @z17 - 2, @z17*1.5; }
+        	[surface='paved'],[surface='asphalt'],[surface='compacted'],[surface='concrete'],[surface='concrete:lanes'],[surface='paving_stones'],[surface='concrete:plates'] { 
+              	[zoom>=12] { line-width: @z12 - 2, @z12*1.5; }
+    			[zoom=13] { line-width: @z13 - 2, @z13*1.5; }
+    			[zoom=14] { line-width: @z14 - 2, @z14*1.5; }
+    			[zoom=15] { line-width: @z15 - 2, @z15*1.5; }
+    			[zoom=16] { line-width: @z16 - 2, @z16*1.5; }
+    			[zoom>=17] { line-width: @z17 - 2, @z17*1.5; }
         	}
-  			[zoom>=12] { line-width: @z12; }
-	    	[zoom=13] { line-width: @z13; }
-    		[zoom=14] { line-width: @z14; }
-    		[zoom=15] { line-width: @z15; }
-    		[zoom=16] { line-width: @z16; }
-    		[zoom>=17] { line-width: @z17; }
+  			[zoom>=12] { line-dasharray: @z12; }
+	    	[zoom=13] { line-dasharray: @z13; }
+    		[zoom=14] { line-dasharray: @z14; }
+    		[zoom=15] { line-dasharray: @z15; }
+    		[zoom=16] { line-dasharray: @z16; }
+    		[zoom>=17] { line-dasharray: @z17; }
     		line-join: round;
       	}
     	::outline {
     		line-color: #aa9000;
-        	[surface='cobblestone'],[surface='paved'],[surface='dirt'],[surface='earth'],[surface='sand'],[surface='pebbleston'],[surface='sett'] {
-                [zoom>=12] { line-dasharray: @z12 - 2, @z12*1.5; }
-    			[zoom=13] { line-dasharray: @z13 - 2, @z13*1.5; }
-    			[zoom=14] { line-dasharray: @z14 - 2, @z14*1.5; }
-    			[zoom=15] { line-dasharray: @z15 - 2, @z15*1.5; }
-    			[zoom=16] { line-dasharray: @z16 - 2, @z16*1.5; }
-    			[zoom>=17] { line-dasharray: @z17 - 2, @z17*1.5; }
+        	[surface='paved'],[surface='asphalt'],[surface='compacted'],[surface='concrete'],[surface='concrete:lanes'],[surface='paving_stones'],[surface='concrete:plates'] {
+                [zoom>=12] { line-width: @z12 - 2, @z12*1.5; }
+    			[zoom=13] { line-width: @z13 - 2, @z13*1.5; }
+    			[zoom=14] { line-width: @z14 - 2, @z14*1.5; }
+    			[zoom=15] { line-width: @z15 - 2, @z15*1.5; }
+    			[zoom=16] { line-width: @z16 - 2, @z16*1.5; }
+    			[zoom>=17] { line-width: @z17 - 2, @z17*1.5; }
         	}
-    		[zoom>=12] { line-width: @z12+2; }
-    		[zoom=13] { line-width: @z13+2; }
-    		[zoom=14] { line-width: @z14+2; }
-    		[zoom=15] { line-width: @z15+2; }
-    		[zoom=16] { line-width: @z16+2; }
-    		[zoom>=17] { line-width: @z17+2; }
+    		[zoom>=12] { line-dasharray: @z12+2; }
+    		[zoom=13] { line-dasharray: @z13+2; }
+    		[zoom=14] { line-dasharray: @z14+2; }
+    		[zoom=15] { line-dasharray: @z15+2; }
+    		[zoom=16] { line-dasharray: @z16+2; }
+    		[zoom>=17] { line-dasharray: @z17+2; }
     		line-join: round;
       }
       [zoom>=12] {

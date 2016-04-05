@@ -9,6 +9,7 @@
     	[zoom>=17] { marker-width: @z17; marker-spacing: @z17*2.5; }
 }
 
+/* Représentation desactivée, chevauchement avec les DSC de la couche style.mss affiché en chevron vert
 #sensuniquevoitureavecequipementvelo {
       	marker-file: url('images/chevrons_bleus-verts.svg');
     	marker-placement: line;
@@ -17,4 +18,4 @@
     	[zoom=15] { marker-width: @z15*2; marker-spacing: @z15*1.5; }
     	[zoom=16] { marker-width: @z16*2; marker-spacing: @z16*1.5; }
     	[zoom>=17] { marker-width: @z17*2; marker-spacing: @z17*1.5; }
-}
+}*/

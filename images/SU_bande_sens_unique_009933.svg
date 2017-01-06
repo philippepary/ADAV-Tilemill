@@ -22,6 +22,6 @@
 		<inkscape:path-effect  is_visible="true" copytype="single_stretched" prop_scale="1" scale_y_rel="false" normal_offset="0" tang_offset="0" prop_units="false" fuse_tolerance="0" effect="skeletal" pattern="M 0,0 1,0" spacing="0" id="path-effect3048-3" vertical_pattern="false">
 		</inkscape:path-effect>
 </defs>
-<path id="path3046" inkscape:connector-curvature="0" fill="#009933" d="M163.037,0.062v99.151l40.711-49.576L163.037,0.062z"/>
-<rect x="40.666" y="0.062" fill="#009933" width="81.443" height="99.151"/>
+<path id="path3046" inkscape:connector-curvature="0" fill="#009933" d="M122.315,0.031v99.151l81.433-49.576L122.315,0.031z"/>
+<rect y="0.031" fill="#009933" width="81.442" height="99.151"/>
 </svg>

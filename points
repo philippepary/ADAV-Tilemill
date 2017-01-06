@@ -14,7 +14,7 @@
       	}
     }
   [type='bicycle_rental'] {
-    point-file:url('images/station_velo_v.png');
+    point-file:url('images/VLS_rouge.png');
     point-allow-overlap:true;
     [zoom=14] {point-transform:"scale(0.4)";}
     [zoom=15] {point-transform:"scale(0.5)";}

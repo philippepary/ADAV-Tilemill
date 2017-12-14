@@ -11,7 +11,7 @@ Map {
 
 #voiescyclables {
   /* piste */
-  [type='cycleway'],[type='track'] {
+  [highway='cycleway'],[cycleway='track'] {
     ::outline { 
     	line-color: #007711;
     	line-join: round;
@@ -34,7 +34,7 @@ Map {
       }
   }
   /* Bande */
-  [type='lane'] { 
+  [cycleway='lane'] { 
     ::outline {
     	[zoom<=12] { line-width: @z12+2; line-dasharray: @z12 - 2, @z12 *1.5; }
     	[zoom=13] { line-width: @z13+2; line-dasharray: @z13 - 2, @z13 *1.5; }
@@ -57,11 +57,11 @@ Map {
       }
   }
   /* Contre-sens sans bande */
-  [type='opposite'],['oneway:bicycle'='no'] { 
+  [cycleway='opposite'],['oneway:bicycle'='no'] { 
     /* Rien :-) */
   }
   /* Bande à contre sens */
-  [type='opposite_lane'] { 
+  [cycleway='opposite_lane'] { 
     ::inline {
     	line-color: #009933;
     	[zoom<=12] { line-width: @z12; line-dasharray: @z12 - 2, @z12*1.5; }
@@ -84,7 +84,7 @@ Map {
     }
   }
   /* Piste à contre-sens */
-  [type='opposite_track'] { 
+  [cycleway='opposite_track'] { 
     line-color: #009933;
     [zoom<=12] { line-width: @z12; }
     [zoom=13] { line-width: @z13; }
@@ -192,7 +192,7 @@ Map {
     }
   }
   /* Tous les contre-sens indiqués par des chevrons */
-  [type='opposite'],[type='opposite_lane'],[type='opposite_track'] {
+  [cycleway='opposite'],[cycleway='opposite_lane'],[cycleway='opposite_track'] {
 		marker-file: url('images/DSC_chevrons_vert_009933.svg');
     	marker-placement: line;
     	marker-opacity: 0.5;

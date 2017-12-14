@@ -178,6 +178,37 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
       "name": "bati"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        1.5632814999999918,
+        50.1114619999997,
+        3.9993341999999896,
+        51.05158739999992
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select * from osm_new_cyclelanes where \"maxspeed\" is not null or \"highway\"='living_street' or \"highway\"='pedestrian') as zones30",
+        "key_field": "",
+        "geometry_field": "",
+        "extent_cache": "auto",
+        "extent": "174023.700546544,6465601.51923518,445203.846656123,6630424.01451001",
+        "dbname": "osm-adav",
+        "host": "adav.scil.coop",
+        "port": "5432",
+        "user": "osm-adav",
+        "password": "osm-adav",
+        "id": "zones30",
+        "project": "ADAV-Tilemill",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "zones30",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "zones30"
     }
   ],
   "scale": 1,

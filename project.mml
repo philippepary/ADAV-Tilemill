@@ -22,40 +22,9 @@
     "style.mss",
     "points",
     "bati",
-    "Réseaux"
+    "zones30"
   ],
   "Layer": [
-    {
-      "geometry": "linestring",
-      "extent": [
-        3.6438611209968736,
-        50.44880716903468,
-        3.712271029575921,
-        50.48801762826131
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "(select ST_LineMerge(ST_Union(geometry)) as geometry, network, name, ref from osm_new_cyclelanes where route='bicycle' group by ref, network, name) as networks",
-        "key_field": "",
-        "geometry_field": "",
-        "extent_cache": "auto",
-        "extent": "405632.764510779,6524367.20611186,413248.120699013,6531224.80942596",
-        "dbname": "osm-adav",
-        "host": "adav.scil.coop",
-        "port": "5432",
-        "user": "osm-adav",
-        "password": "osm-adav",
-        "id": "networks",
-        "project": "ADAV",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
-      },
-      "id": "networks",
-      "class": "",
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "networks"
-    },
     {
       "extent": [
         1.4959542601541473,

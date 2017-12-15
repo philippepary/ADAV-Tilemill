@@ -81,7 +81,7 @@ Map {
     }
   }
   /* piste */
-  [type='cycleway'],[type='track'] {
+  [type='cycleway'],[type='track'],[type='cycleway:left'],[type='cycleway:right'] {
     ::outline { 
     	line-color: #007711;
     	line-join: round;
@@ -223,13 +223,13 @@ Map {
     		[zoom=16] { line-dasharray: @z16 - 2, @z16*1.5; }
     		[zoom>=17] { line-dasharray: @z17 - 2, @z17*1.5; }
         /*en dasharray les surfaces définis et sinon en continue */ 
-        	[surface='paved'],[surface='asphalt'],[surface='compacted'],[surface='concrete'],[surface='concrete:lanes'],[surface='paving_stones'],[surface='concrete:plates'] { 
-              	[zoom<=12] { line-width: @z12+2; }
-    			[zoom=13] { line-width: @z13+2; }
-    			[zoom=14] { line-width: @z14+2; }
-    			[zoom=15] { line-width: @z15+2; }
-    			[zoom=16] { line-width: @z16+2; }
-    			[zoom>=17] { line-width: @z17+2; }
+        	['surface'='paved'],['surface'='asphalt'],['surface'='compacted'],['surface'='concrete'],['surface'='concrete:lanes'],['surface'='paving_stones'],['surface'='concrete:plates'] { 
+              	[zoom<=12] { line-width: @z12+2; line-dasharray: @z12 + 2, 0; }
+    			[zoom=13] { line-width: @z13+2; line-dasharray: @z13 + 2, 0; }
+    			[zoom=14] { line-width: @z14+2; line-dasharray: @z14 + 2, 0; }
+    			[zoom=15] { line-width: @z15+2; line-dasharray: @z15 + 2, 0; }
+    			[zoom=16] { line-width: @z16+2; line-dasharray: @z16 + 2, 0; }
+    			[zoom>=17] { line-width: @z17+2; line-dasharray: @z17 + 2, 0; }
         	}
 
     		line-join: round;
@@ -242,13 +242,13 @@ Map {
     		[zoom=15] { line-dasharray: @z15 - 2, @z15*1.5; }
     		[zoom=16] { line-dasharray: @z16 - 2, @z16*1.5; }
     		[zoom>=17] { line-dasharray: @z17 - 2, @z17*1.5; }
-        	[surface='paved'],[surface='asphalt'],[surface='compacted'],[surface='concrete'],[surface='concrete:lanes'],[surface='paving_stones'],[surface='concrete:plates'] {
-                [zoom<=12] { line-width: @z12+2; }
-    			[zoom=13] { line-width: @z13+2; }
-    			[zoom=14] { line-width: @z14+2; }
-    			[zoom=15] { line-width: @z15+2; }
-    			[zoom=16] { line-width: @z16+2; }
-    			[zoom>=17] { line-width: @z17+2; }
+        	['surface'='paved'],['surface'='asphalt'],['surface'='compacted'],['surface'='concrete'],['surface'='concrete:lanes'],['surface'='paving_stones'],['surface'='concrete:plates'] {
+                [zoom<=12] { line-width: @z12+2; line-dasharray: @z12 + 2, 0; }
+    			[zoom=13] { line-width: @z13+2; line-dasharray: @z13 + 2, 0; }
+    			[zoom=14] { line-width: @z14+2; line-dasharray: @z14 + 2, 0; }
+    			[zoom=15] { line-width: @z15+2; line-dasharray: @z15 + 2, 0; }
+    			[zoom=16] { line-width: @z16+2; line-dasharray: @z16 + 2, 0; }
+    			[zoom>=17] { line-width: @z17+2; line-dasharray: @z17 + 2, 0; }
         	}
     		line-join: round;
       }

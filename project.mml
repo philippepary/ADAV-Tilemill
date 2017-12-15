@@ -28,8 +28,8 @@
     {
       "geometry": "linestring",
       "extent": [
-        3.6438611209968736,
-        50.44880716903468,
+        1.4938611209968736,
+        49.44880716903468,
         3.712271029575921,
         50.48801762826131
       ],
@@ -61,7 +61,7 @@
         1.4959542601541473,
         49.92999267594165,
         4.275257481841043,
-        51.09244027032184
+        51.29244027032184
       ],
       "Datasource": {
         "type": "postgis",
@@ -93,7 +93,7 @@
         1.5632814999999918,
         50.016721800000035,
         4.176242300000012,
-        51.07818959999993
+        51.27818959999993
       ],
       "Datasource": {
         "type": "postgis",
@@ -124,7 +124,7 @@
         1.4959542601541473,
         49.991236392583495,
         4.210546758589583,
-        51.08184638290079
+        51.28184638290079
       ],
       "Datasource": {
         "type": "postgis",
@@ -155,11 +155,11 @@
         1.4959542601541473,
         49.991236392583495,
         4.210546758589583,
-        51.08184638290079
+        51.28184638290079
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select * from osm_new_sensuniques where (\"cycleway\" is not null or \"cycleway:left\" is not null or \"cycleway:right\" is not null)  and \"highway\"!=\"cycleway\") as sensuniquesvoitureavecequipementvelo",
+        "table": "(select * from osm_new_sensuniques where (\"cycleway\" is not null or \"cycleway:left\" is not null or \"cycleway:right\" is not null)  and \"highway\"!='cycleway') as sensuniquesvoitureavecequipementvelo",
         "key_field": "",
         "geometry_field": "",
         "extent_cache": "auto",
@@ -185,7 +185,7 @@
         1.5725201999999936,
         50.226125800000034,
         3.249313799999993,
-        51.03738920000092
+        51.23738920000092
       ],
       "Datasource": {
         "type": "postgis",

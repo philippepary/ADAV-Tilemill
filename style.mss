@@ -110,10 +110,8 @@ Map {
 			[zoom=13] { line-width: @z13+2; line-dasharray: @z13 - 2, @z13 *1.5; }
 			[zoom=14] { line-width: @z14+2; line-dasharray: @z14 - 2, @z14 *1.5; }
 			[zoom=15] { line-width: @z15+2; line-dasharray: @z15 - 2, @z15 *1.5; }
-			[zoom=14] { line-width: @z14+2; }
-			[zoom=15] { line-width: @z15+2; }
-			[zoom=16] { line-width: @z16+2; }
-			[zoom>=17] { line-width: @z17+2; }
+			[zoom=16] { line-width: @z16+2; line-dasharray: @z16 - 2, @z16 *1.5; }
+			[zoom>=17] { line-width: @z17+2; line-dasharray: @z17 - 2, @z17 *1.5; }
 			line-join: round;
 		}
 		::inline {
@@ -128,7 +126,7 @@ Map {
 		}
 	}
 	/* Piste dans un seul sens */
-	['cycleway:right'='lane'] {
+        ['cycleway:lane'='lane'] {
 		::outline {
 			[zoom<=12] { line-offset: (@z12+2)/2; line-width: (@z12+2)/2; line-dasharray: @z12 - 2, @z12 *1.5; }
 			[zoom=13] { line-offset: (@z13+2)/2; line-width: (@z13+2)/2; line-dasharray: @z13 - 2, @z13 *1.5; }
@@ -150,7 +148,7 @@ Map {
 			line-join: round;
 		}
 	}
-	['cycleway:left'='lane'] {
+	['cycleway:right'='lane'] {
 		::outline {
 			[zoom<=12] { line-offset: -1*(@z12+2)/2; line-width: (@z12+2)/2; line-dasharray: @z12 - 2, @z12 *1.5; }
 			[zoom=13] { line-offset: -1*(@z13+2)/2; line-width: (@z13+2)/2; line-dasharray: @z13 - 2, @z13 *1.5; }
